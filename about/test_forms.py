@@ -12,7 +12,7 @@ class TestCollaborateForm(TestCase):
             'message': 'Hello!'
         })
         self.assertTrue(form.is_valid(), msg="Form is not valid")
-        
+
     def test_name_is_required(self):
         """Test for the 'name' field"""
         form = CollaborateForm({
